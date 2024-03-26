@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+div{
+    display: block;
+}
+.row{
+    display:flow-root;
+}
+/* 
+.col{
+    display:-ms-grid;
+} */

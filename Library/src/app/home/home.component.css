@@ -2,22 +2,56 @@ h1{
     background-color: rgb(161, 211, 54);
     opacity: 60%;
     color: white;
-    font-size: 20rem;
+    font-size: 10rem;
+    height: 22vw;
+    padding-top: 2vh;
     text-align: center;
     display: block;
 }
 #book2{
-    rotate: 180deg;
+    rotate: 0deg;
 }
 img{
-    max-width: 400px;
+    max-width: 50%;
     display: flex;
-    /* align-self: center; */
+    cursor: pointer;
 }
+
 .homecomp {
     display: flex;
     background-image: url(../../assets/Bg.jpg);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.images{
+    display: flex;
+    width: 100%;
+    border: none;
+    flex-direction: column;
+    align-self: center;
     align-items: center;
+    padding-top: 5vh;
+}
+
+@media (min-width: 768px) {
+    .images{
+        width: 50vw;
+        flex-direction: row;
+        border: 10px solid #a1d336;
+        border-radius: 3rem;
+        padding-top: unset;
+    }
+    h1{
+        /* font-size: 20rem; too much */
+        font-size: 15vw;
+        height: 20vw;
+    }
+    #book2{
+        rotate: 180deg;
+        padding-top: 2vh;
+    }
+    img{width: 80%;}
 }

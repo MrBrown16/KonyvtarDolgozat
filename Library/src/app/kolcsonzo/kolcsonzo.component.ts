@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { BaseService } from '../base.service';
 
 @Component({
   selector: 'app-kolcsonzo',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./kolcsonzo.component.css']
 })
 export class KolcsonzoComponent {
+
+  kolcsonzok!:any
+
+  constructor(private base:BaseService){
+    base.getKolcsonzok().subscribe((res:{Id:number,Nev:string,SzulIdo:string}[])=>this.kolcsonzok=res)
+  }
+
 
 }
