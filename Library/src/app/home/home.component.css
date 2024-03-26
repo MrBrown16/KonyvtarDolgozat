@@ -1,0 +1,23 @@
+h1{
+    background-color: rgb(161, 211, 54);
+    opacity: 60%;
+    color: white;
+    font-size: 20rem;
+    text-align: center;
+    display: block;
+}
+#book2{
+    rotate: 180deg;
+}
+img{
+    max-width: 400px;
+    display: flex;
+    /* align-self: center; */
+}
+.homecomp {
+    display: flex;
+    background-image: url(../../assets/Bg.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    align-items: center;
+}
